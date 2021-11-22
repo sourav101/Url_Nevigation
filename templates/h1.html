@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registartion From </title>
+	<style>
+		body
+		{
+			background: white url("https://img.freepik.com/free-psd/top-view-photographer-wooden-workspace-with-laptop_23-2149021358.jpg?size=626&ext=jpg&ga=GA1.2.1347674479.1627862400"); norepeat center scroll;
+			background-size: cover;
+		}
+		#register
+		{
+			background: linear-gradient(45deg,orange,blue,green);
+			width: 300px;
+			text-align: center;
+			margin: 100px auto;
+			border-radius: 20px;
+			box-shadow: 0 0 10px blue;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		{
+			margin: 15px;
+			border: none;
+			outline: none;
+			height: 20px;
+			width: 230px;
+			background: transparent;
+			border-bottom: 2px solid white;
+			color: white;
+		}
+		: :placeholder
+		{
+			color: white;
+			text-align: center;
+		}
+		input[type="submit"]
+		{
+			background: linear-gradient(45deg,violet,blue,darkred);
+			color: white;
+			width: 220px;
+			border: none;
+			outline: none;
+			margin: 20px;
+			padding: 7px 25px;
+			border-radius: 20px;
+		}
+		input[type="submit"]:hover
+		{
+			cursor: pointer;
+			box-shadow: 0 0 10px white;
+		}
+		#logo
+		{
+			width: 70px;
+			height: 70px;
+			margin-left: 33%;
+		}
+		#logo img
+		{
+			width: inherit;
+			height: inherit;
+			margin-top:-40px;
+			border-radius:50%;
+			border: 16px solid white;
+		}
+	</style>
+</head>
+<body>
+    <div id='register'>
+    	<div id='logo'>
+    		<img src="https://www.groovypost.com/wp-content/uploads/2019/04/laptop-keyboard-featured-1000x450.jpg">
+        </div>
+        <div class="form-group">
+        <input type="text" name="usn" placeholder="Enter Username">
+    </div>
+    <div class="form-group">
+    	<input type="email" name="email" placeholder="Enter Email">
+    </div>
+    <div class="form-group">
+    <input type="password" name="pw" placeholder="Enter password">
+    </div>
+    <div class="form-group">
+    <input type="password" name="cpw" placeholder="Enter password">
+    </div>
+    <div class="form-group">
+    <input type="submit" value="Registartion">
+    </div>
+    </div>
+    <h6><a href="{% url 'online_Form' %}">Travel to online_Form page</a></h6>
+    <h6><a href="{% url 'Registration' %}">Travel to Registration page</a></h6>
+    <h6><a href="{% url 'app2:sourav' %}">sourav Page</a></h6> 
+    <h6><a href="{% url 'app2:Asish' %}">Asish Page</a></h6> 
+</body>
+</html>     	
+</body>
+</html>

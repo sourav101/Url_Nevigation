@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS TRANSLATE</title>
+	<style>
+	     body
+	     {
+	     	background-image: url(https://media.gettyimages.com/photos/repairman-checking-voltage-with-digital-multimeter-picture-id1006169700?s=612x612);
+	     	border-radius: 200px;
+	     	width: 200px;
+	     	align-items: center;
+	     	margin: 20px auto;
+	     }
+		 div
+		    {
+		    	background-color: whitesmoke;
+		    	width: 450px;
+		    	align-items: center;
+		    	height: 300px;
+		    	margin: 50px auto;
+		    	border-radius: 20px;
+		    	overflow: hidden;
+		    	position: relative;
+            }
+            div img
+            {
+            	align-items: center;
+            	width: inherit;
+            	height: inherit;
+            	border-radius: 20px 20px 0px 0px;
+            	transition: all 1s linear 0s;
+            }
+            div:hover img
+            {
+            	transform: translateY(-100px);
+            }
+            .details
+            {
+            	position: absolute;
+            	top: -50px;
+            	left: 0px;
+            	background-color: rgb(139,23,24);
+            	height: 100px;
+            	color: white;
+            	border-radius: 0px 0px 20px 20px;
+            	margin-top: 350px;
+
+            	transition: all 1s linear 0s;
+            }
+            div:hover .details
+            {
+            	transform: translateY(-100px);
+            }
+            div ul li
+            {
+            	border: 1px solid white;
+            	width: 350px;
+            	text-align: center;
+            	list-style-type: none;
+            }
+	</style>
+</head>
+<body>
+     <div align="center">
+     	<img src="https://m.media-amazon.com/images/I/81SdJG3OUjL._SX450_.jpg">
+     	<div class="details">
+     		<ul>
+     			<li>HP 15AMD Ryzen 7 15.6"(39.62cms)FHD Laptop(Ryzen 7-3700U/8GB/512GB</li>
+     			<li>HP Laptop</li>
+     			<li>&#8377;52990.00</li>
+     	    </ul>
+     	</div>
+    </div>
+    <h6><a href="{% url 'Registration' %}">Registartion page</a></h6>
+    <h6><a href="{% url 'online_Form' %}">online_Form page</a></h6>
+    <h6><a href="{% url 'app2:Asish' %}">Asish Page</a></h6>    		
+</body>
+</html>

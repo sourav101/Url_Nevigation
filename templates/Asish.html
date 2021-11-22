@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS ROTATE</title>
+	<style>
+	    body
+	    {
+	    	background-image: url(https://image.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+	    }
+		div
+		{
+			width: 350px;
+			height: 200px;
+			box-shadow: 0 0 10px black;
+			margin: 60px auto;
+			border-radius: 30px;
+			overflow: hidden;
+			position: relative;
+		}
+		div img
+		{
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			transition: all 1s linear 0s;
+		}
+		div:hover img
+		{
+			transform: translateX(50%);
+			border-radius: 0px 30px 30px 0px;
+		}
+		#text
+		{
+			position: absolute;
+			top: -60px;
+			left: 0px;
+			width: 50%;
+			border-radius: 30px 0px 0px 30px;
+			background-color: rgb(90,9,9);
+			transform: perspective(200px) rotateY(90deg);
+			transition: all 1s linear 0s;
+			transform-origin: left;
+		}
+		div:hover #text
+		{
+			transform: perspective(200px) rotateY(0deg);
+		}
+	</style>
+</head>
+<body>
+    <div>
+        <img src="https://soliloquywp.com/wp-content/uploads/2019/04/nb_esc_cover.jpg">
+    <div id="text">
+    <p>When somebody begins a sentence with “IT WOULD BE NICE IF..” the right thing to do is to wait politely for the speaker to finish. No project ever gets around to the it-would-be-nice features: or if they do, they regret it. Wait for sentences that begin “WE HAVE TO..” and pay close attention, and see if you agree.</p>
+    </div>
+    </div>
+    <h6><a href="{% url 'Registration' %}">Registartion page</a></h6>
+    <h6><a href="{% url 'online_Form' %}">online_Form page</a></h6>
+    <h6><a href="{% url 'app2:sourav' %}">sourav Page</a></h6> 	
+</body>
+</html>
